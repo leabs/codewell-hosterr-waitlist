@@ -1,10 +1,10 @@
-# Codewell.cc YelpCamp Template
+# Codewell.cc Hosterr Waitlist Template
 
 [Codewell.cc](https://www.codewell.cc/) challenge converting a .png mockup design to a responsive HTML static webpage. This uses jekyll to generate the page and bulma css framework for some basic styling.
 
-See it live [here.](https://codewell-yelpcamp.netlify.app)
+See it live [here.](https://codewell-hosterr.netlify.app/)
 
-![codewell newsletter popup design](YelpCampStarterFiles/Design/landingpagedesktop.jpg)
+![codewell Hosterr waitlist design](/HosterrStarterFiles/Design/landingpage.png)
 
 ### Prerequisites needed to build locally
 
