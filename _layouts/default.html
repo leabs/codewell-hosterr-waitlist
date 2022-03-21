@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html {% if site.lang %}lang="{{ site.lang }}" {% endif %}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Set the document's title -->
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}" />
+
+    <!-- Link to external CSS files -->
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme Color for Chrome, Firefox OS and Opera -->
+    {% if site.themecolor %}
+    <meta name="theme-color" content="{{ site.themecolor }}" />
+    {% endif %}
+
+    <!-- Set the base URL for all relative URLs within the document -->
+    {% if site.baseurl %}
+    <base href="{{ site.baseurl }}" />
+    {% endif %}
+
+    <!-- For IE 10 and below -->
+    <!-- Place favicon.ico in the root directory - no tag necessary -->
+
+    <!-- Icon in the highest resolution we need it for -->
+    <link rel="icon" sizes="192x192" href="/path/to/icon.png" />
+
+    <!-- Apple Touch Icon (reuse 192px icon.png) -->
+    <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png" />
+
+    <!-- Safari Pinned Tab Icon -->
+    <link rel="mask-icon" href="/path/to/icon.svg" color="blue" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">{{ content }}</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Set the document's title -->
+    <title>Your awesome title</title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
+
+    <!-- Link to external CSS files -->
+    <link rel="stylesheet" href="assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme Color for Chrome, Firefox OS and Opera -->
+    
+    <meta name="theme-color" content="" />
+    
+
+    <!-- Set the base URL for all relative URLs within the document -->
+    
+    <base href="" />
+    
+
+    <!-- For IE 10 and below -->
+    <!-- Place favicon.ico in the root directory - no tag necessary -->
+
+    <!-- Icon in the highest resolution we need it for -->
+    <link rel="icon" sizes="192x192" href="/path/to/icon.png" />
+
+    <!-- Apple Touch Icon (reuse 192px icon.png) -->
+    <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png" />
+
+    <!-- Safari Pinned Tab Icon -->
+    <link rel="mask-icon" href="/path/to/icon.svg" color="blue" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row"><nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="#">
+      <img
+        src="../HosterrStarterFiles/Assets/Logo.svg"
+        width="112"
+        height="28"
+      />
+      <a class="button hiring-button is-rounded is-small nav-gradient-button">
+        Hosterr is hiring!
+      </a>
+    </a>
+
+    <a
+      role="button"
+      class="navbar-burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item"></div>
+    </div>
+
+    <div class="navbar-center">
+      <a class="navbar-item"> Plans </a>
+      <a class="navbar-item"> Find Domain </a>
+      <a class="navbar-item"> Why Hosterr </a>
+    </div>
+
+    <div class="navbar-end">
+      <a href="#" class="navbar-item">Sign in</a>
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-info is-medium primary-button">
+            <strong>Join Waitlist</strong>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(
+      document.querySelectorAll(".navbar-burger"),
+      0
+    );
+
+    // Check if there are any navbar burgers
+    if ($navbarBurgers.length > 0) {
+      // Add a click event on each of them
+      $navbarBurgers.forEach((el) => {
+        el.addEventListener("click", () => {
+          // Get the target from the "data-target" attribute
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+          el.classList.toggle("is-active");
+          $target.classList.toggle("is-active");
+        });
+      });
+    }
+  });
+</script>
+
+
+<div
+  class="column is-5 has-text-centered is-hidden-tablet"
+  style="padding: 30px"
+>
+  <div
+    style="justify-content: center; align-items: center"
+    class="is-hidden-tablet"
+  >
+    <img src="HosterrStarterFiles/Assets/composed.png" class="index-image" />
+  </div>
+</div>
+
+<div class="columns main-columns is-vcentered" style="margin: 40px 0">
+  <div class="column is-7">
+    <div class="content-container">
+      <h1>Host your website in less than 5 minutes.</h1>
+      <p>
+        With Hosterr, get your website up and running in no less than 5 minutes
+        with the most competitive pricing packages available online.
+      </p>
+      <br />
+      <div class="field is-grouped is-tablet">
+        <p class="control is-expanded">
+          <input
+            class="input is-medium"
+            type="text"
+            placeholder="Enter e-mail address"
+          />
+        </p>
+        <p class="control">
+          <a class="button is-info is-medium primary-button">
+            <strong>Join Waitlist</strong>
+          </a>
+        </p>
+      </div>
+      <div class="is-vcentered">
+        <img
+          src="HosterrStarterFiles/Assets/Checkmark.svg"
+          style="margin-right: 8px; position: relative; top: 4px"
+        />
+        <span>No spam, ever. Unsubscribe anytime.</span>
+      </div>
+    </div>
+  </div>
+  <div
+    class="column is-hidden-mobile is-5 has-text-centered"
+    style="padding: 30px"
+  >
+    <div style="justify-content: center; align-items: center">
+      <img src="HosterrStarterFiles/Assets/composed.png" class="index-image" />
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="columns is-tablet">
+    <div class="column is-8 footer-links">
+      <a href="#" class="navbar-item">Facebook</a>
+      <a href="#" class="navbar-item">Instagram</a>
+      <a href="#" class="navbar-item">Twitter</a>
+    </div>
+    <div
+      class="column is-4 align-right is-justify-content-right"
+      style="float: right"
+    >
+      <div class="columns is-mobile">
+        <div class="column is-2 author-image">
+          <img src="../HosterrStarterFiles/Assets/Help Avatar.svg" />
+        </div>
+        <div class="column is-10">
+          <h4>Have any questions?</h4>
+          <h4><strong>Talk to a specialist</strong></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+    </div>
+  </body>
+</html>

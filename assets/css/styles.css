@@ -1,0 +1,106 @@
+html {
+  font-size: 18px;
+}
+h1 {
+  font-size: 2.75em;
+  font-family: "Playfair Display", serif;
+  color: #000;
+  line-height: 1.2em;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.2em;
+}
+h5 {
+  font-size: 1em;
+}
+.container {
+  padding: 6px;
+}
+p,
+a,
+h4 {
+  font-size: 16px;
+}
+html,
+.navbar {
+  background: rgba(248, 242, 229);
+}
+.nav-gradient-button {
+  background: linear-gradient(to right, orange 0%, red 100%);
+  color: #fff !important;
+  border: none;
+}
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-center > a {
+  display: inline-block;
+}
+.primary-button {
+  background: rgb(64, 108, 231) !important ;
+  font-size: 16px !important;
+  padding: 26px 20px;
+}
+.footer-links > a {
+  display: inline-block;
+}
+.author-image {
+  float: right !important;
+}
+.index-image {
+  max-height: 543px;
+  max-width: auto;
+}
+.content-container {
+  width: 75%;
+}
+.hiring-button {
+  margin-top: 20px;
+}
+@media screen and (max-width: 991px) {
+  .content-container {
+    width: 100%;
+  }
+  .navbar-center > a,
+  .navbar-center {
+    display: block !important;
+  }
+  .hiring-button {
+    margin-top: 12px;
+  }
+  .field {
+    display: block !important ;
+    width: 100% !important;
+  }
+  .field.is-grouped > .control:not(:last-child) {
+    margin-right: 0 !important;
+  }
+  .control .button {
+    width: 100% !important;
+    margin-top: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-columns {
+    flex-direction: column-reverse !important;
+  }
+  .column {
+    width: 100%;
+  }
+}
